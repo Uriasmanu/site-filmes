@@ -33,9 +33,11 @@ export default function RootLayout({
       >
         <SidebarProvider>
           <AppSidebar />
-          <main>
+          <main className="w-full h-full">
             <SidebarTrigger />
+            <div className="flex p-6 w-full h-full box-border">
             {children}
+            </div>
           </main>
         </SidebarProvider>
       </body>
